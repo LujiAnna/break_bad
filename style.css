@@ -142,3 +142,30 @@ input:focus {
         flex: 1 1 calc(33% - 2rem);
     }
 }
+
+@media screen and (max-width: 900px) {
+    .result {
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+        height: 300px;
+        width: 200px;
+    }
+    .result p {
+        font-size: 80%;
+    }
+    button {
+        font-size: 90%;
+        padding: 8px;
+        margin: 10px;
+        width: 200px;
+    }
+    input {
+        font-size: 90%;
+        padding: 8px;
+        margin: 10px;
+        width: 200px;
+    }
+}
