@@ -1,60 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 * {
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
-html {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-family: 'Dosis', sans-serif;
-    line-height: 1.6;
-    color: #666;
-    background: #F6F6F6;
-}
-
-#root {
-    max-width: 1200px;
-    margin: 0 auto;
+body {
+    background-image: linear-gradient( 180deg, rgba(247, 247, 247, 1) 23.8%, rgba(252, 221, 221, 1) 92%);
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
 }
 
 h1 {
     text-align: center;
     padding: 1.5rem 2.5rem;
-    background-image: linear-gradient(120deg, #fbc2eb 0%, #a6c1ee 100%);
-    margin: 0 0 2rem 0;
+    /* background-image: linear-gradient(120deg, #fbc2eb 0%, #a6c1ee 100%); */
+    /* margin: 0 0 2rem 0; */
     font-size: 1.5rem;
-    color: white;
+    color: #8fd3f4;
+    display: inline-block;
+    /* display: flex;
+    align-items: left; */
 }
 
-img {
-    display: block;
-    margin: 1rem auto;
-    max-width: 100%;
+header img {
+    display: inline-block;
+    /* margin-top: 2px; */
+    /* margin: 1rem auto; */
+    /* max-width: 100%; */
 }
 
-p {
-    padding: 0 2.5rem 2.5rem;
-    margin: 0;
-}
-
-.container {
+.results {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.result {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    height: 400px;
+    width: 300px;
+}
+
+.result img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
 }
 
 .card {
-    margin: 1rem;
+    /* margin: 1rem; */
     /* background: white;
     border: 1px solid gray; */
     box-shadow: 2px 4px 25px rgba(0, 0, 0, .1);
-    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    background-image: linear-gradient(120deg, #fbc2eb 0%, #8fd3f4 100%);
     border-radius: 12px;
     overflow: hidden;
     transition: all .2s linear;
+    /* white-space: nowrap; */
+    /* overflow-x: auto; */
+    overflow-y: hidden;
+    /* word-wrap: break-word;
+    white-space: nowrap; */
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.card:hover {
-    box-shadow: 2px 8px 45px rgba(0, 0, 0, .15);
-    transform: translate3D(0, -2px, 0);
+span {
+    margin: 0;
+    padding: 1px;
+    margin-left: 2px;
+    display: inline-block;
+    line-height: 24px;
+    font-size: 80%;
+}
+
+li {
+    list-style: none;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2px;
+}
+
+button {
+    background-color: darksalmon;
+    border: 0;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+button:focus {
+    outline: none
+}
+
+input {
+    background-color: #fff;
+    border: 0;
+    border-radius: 4px;
+    color: darksalmon;
+    font-size: 18px;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+}
+
+input:active {
+    transform: scale(0.98);
+}
+
+input:focus {
+    outline: none
 }
 
 @media screen and (min-width: 600px) {
