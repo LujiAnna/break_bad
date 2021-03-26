@@ -55,6 +55,10 @@ header img {
     width: 100%;
 }
 
+.result p {
+    text-align: center;
+}
+
 .card {
     margin: 0.5rem;
     /* background: white;
@@ -145,11 +149,7 @@ input:focus {
 
 @media screen and (max-width: 900px) {
     .result {
-        background-color: #fff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 10px;
+        margin: 8px;
         height: 300px;
         width: 200px;
     }
@@ -159,13 +159,36 @@ input:focus {
     button {
         font-size: 90%;
         padding: 8px;
-        margin: 10px;
+        margin: 8px;
         width: 200px;
     }
     input {
         font-size: 90%;
         padding: 8px;
-        margin: 10px;
+        margin: 8px;
         width: 200px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .result {
+        margin: 5px;
+        height: 200px;
+        width: 150px;
+    }
+    .result p {
+        font-size: 70%;
+    }
+    button {
+        font-size: 90%;
+        padding: 5px;
+        margin: 10px;
+        width: 150px;
+    }
+    input {
+        font-size: 80%;
+        padding: 5px;
+        margin: 5px;
+        width: 150px;
     }
 }
