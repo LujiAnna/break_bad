@@ -149,6 +149,9 @@ input:focus {
 }
 
 @media screen and (max-width: 900px) {
+    header {
+        margin-top: 2px;
+    }
     .result {
         /* margin: 8px; */
         height: 300px;
@@ -168,6 +171,9 @@ input:focus {
         padding: 8px;
         /* margin: 8px; */
         width: 200px;
+    }
+    .buttons {
+        margin-bottom: 3px;
     }
 }
 
