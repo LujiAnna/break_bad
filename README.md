@@ -6,7 +6,7 @@ Display list of episodes where characters have appeared together
 - javascript
 
 ## testing
-- jest
+- [jest](https://jestjs.io/docs/getting-started)
 
 ## source
 - [api](breakingbadapi.com)
